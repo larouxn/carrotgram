@@ -15,5 +15,5 @@
   <%= @comment.idea_id %>
 </p>
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Edit', edit_comment_path(@comment) %>
+<%= link_to 'Back', idea_path(@comment.idea_id) %>

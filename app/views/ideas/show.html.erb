@@ -12,7 +12,6 @@
 
 <p>
   <strong>Picture:</strong><br>
-  <%= @idea.picture %><br>
   <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 </p>
 
@@ -20,9 +19,13 @@
 <% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_name %></strong>
-    <br />
+    <br>
     <p><%= comment.body %></p>
-    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: '削除してもよろしいですか？' } %></p>
+    <p>
+      <%= link_to 'Edit', edit_comment_path(comment) %> |
+      <%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
+    </p>
+    <br>
   </div>
 <% end %>
 <%= render 'comments/form', comment: @comment %>
