@@ -1,5 +1,5 @@
 # Rails Girls Okinawa
 
-1. `bundle`
+1. `gel install`
 2. `rake db:migrate`
 3. `rails s`
