@@ -15,6 +15,10 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: Install bundler
+          command: gem install bundler -v '2.0.1'
+
       # Which version of bundler?
       - run:
           name: Which bundler?
