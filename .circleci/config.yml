@@ -36,3 +36,7 @@ jobs:
       - run:
           name: Run minitest
           command: bundle exec rake test
+
+      - run:
+          name: Rubocop
+          command: bundle exec rubocop
