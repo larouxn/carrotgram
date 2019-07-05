@@ -5,19 +5,9 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
     @comment = comments(:one)
   end
 
-  test "should get index" do
-    get comments_url
-    assert_response :success
-  end
-
-  test "should get new" do
-    get new_comment_url
-    assert_response :success
-  end
-
   test "should create comment" do
     assert_difference('Comment.count') do
-      post comments_url, params: { comment: { body: @comment.body, idea_id: @comment.idea_id, user_name: @comment.user_name } }
+      post comments_url, params: { comment: { body: @comment.body, idea_id: Idea.first.id, user_name: @comment.user_name } }
     end
 
     assert_redirected_to comment_url(Comment.last)
@@ -34,7 +24,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update comment" do
-    patch comment_url(@comment), params: { comment: { body: @comment.body, idea_id: @comment.idea_id, user_name: @comment.user_name } }
+    patch comment_url(@comment), params: { comment: { body: @comment.body, idea_id: Idea.first.id, user_name: @comment.user_name } }
     assert_redirected_to comment_url(@comment)
   end
 
@@ -43,6 +33,6 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
       delete comment_url(@comment)
     end
 
-    assert_redirected_to comments_url
+    assert_redirected_to idea_url(@comment.idea_id)
   end
 end
