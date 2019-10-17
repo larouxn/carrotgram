@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.3-node-browsers
+      - image: circleci/ruby:2.6.5-node-browsers
         environment:
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
@@ -17,7 +17,7 @@ jobs:
 
       - run:
           name: Install bundler
-          command: gem install bundler -v '2.0.1'
+          command: gem install bundler -v '2.0.2'
 
       # Which version of bundler?
       - run:
