@@ -23,7 +23,7 @@ class IdeasControllerTest < ActionDispatch::IntegrationTest
         idea: {
           description: @idea.description,
           name: @idea.name,
-          picture: fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'blobthumbsup.png')),
+          picture: fixture_file_upload(Rails.root.join('test/fixtures/files/blobthumbsup.png')),
         },
       }
     end
@@ -46,7 +46,7 @@ class IdeasControllerTest < ActionDispatch::IntegrationTest
       idea: {
         description: @idea.description,
         name: @idea.name,
-        picture: fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'blobthumbsup.png')),
+        picture: fixture_file_upload(Rails.root.join('test/fixtures/files/blobthumbsup.png')),
       },
     }
 
