@@ -17,7 +17,7 @@ jobs:
 
       - run:
           name: Install bundler
-          command: gem install bundler -v '2.0.2'
+          command: gem install bundler -v '2.1.4'
 
       # Which version of bundler?
       - run:
