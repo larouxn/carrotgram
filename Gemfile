@@ -60,6 +60,7 @@ group :development do
   gem 'pry'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
+  gem 'rubocop-shopify', require: false
   gem 'spring'
   gem 'spring-watcher-listen'
 end
