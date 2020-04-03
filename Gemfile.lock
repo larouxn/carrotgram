@@ -189,8 +189,8 @@ GEM
       activesupport
       rack (>= 1.1)
       rubocop (>= 0.72.0)
-    rubocop-shopify (1.0.0)
-      rubocop (>= 0.78.0)
+    rubocop-shopify (1.0.1)
+      rubocop (>= 0.81.0)
     ruby-progressbar (1.10.1)
     ruby-vips (2.0.17)
       ffi (~> 1.9)
