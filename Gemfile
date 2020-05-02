@@ -5,39 +5,39 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails'
+gem 'bootsnap', require: false
 gem 'carrierwave'
+gem 'coffee-rails'
+gem 'jbuilder'
 gem 'mini_magick'
 gem 'puma'
-gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-gem 'turbolinks'
-gem 'jbuilder'
-gem 'bootsnap', require: false
+gem 'rails'
 gem 'rubocop'
+gem 'sass-rails'
+gem 'turbolinks'
 gem 'tzinfo-data'
+gem 'uglifier'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'listen'
-  gem 'web-console'
   gem 'pry'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-shopify', require: false
   gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'sqlite3'
+  gem 'web-console'
 end
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
 end
 
 group :production do
