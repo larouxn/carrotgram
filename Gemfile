@@ -34,8 +34,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'chromedriver-helper'
-  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
 
 group :production do
