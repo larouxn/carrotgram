@@ -15,6 +15,7 @@ gem 'sass-rails'
 gem 'turbolinks'
 gem 'tzinfo-data'
 gem 'uglifier'
+gem 'msgpack', '~> 1.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
