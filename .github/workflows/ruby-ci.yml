@@ -1,12 +1,12 @@
 name: Ruby CI
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - '**'
+  push:
+    branches:
+      - main
 
 jobs:
   build:
