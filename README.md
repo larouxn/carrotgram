@@ -1,4 +1,4 @@
-# Carrotgram [![CircleCI](https://circleci.com/gh/larouxn/carrotgram.svg?style=svg)](https://circleci.com/gh/larouxn/carrotgram)
+# Carrotgram [![Ruby CI](https://github.com/larouxn/carrotgram/actions/workflows/ruby-ci.yml/badge.svg?branch=main)](https://github.com/larouxn/carrotgram/actions/workflows/ruby-ci.yml)
 
 1. `bundle install`
 2. `rake db:migrate`
