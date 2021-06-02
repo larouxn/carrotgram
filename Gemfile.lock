@@ -281,7 +281,7 @@ DEPENDENCIES
   rubocop
   rubocop-performance
   rubocop-rails
-  rubocop-shopify
+  rubocop-shopify (~> 2.0)
   sass-rails
   spring
   spring-watcher-listen

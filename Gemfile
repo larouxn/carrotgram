@@ -8,6 +8,7 @@ gem 'carrierwave'
 gem 'coffee-rails'
 gem 'jbuilder'
 gem 'mini_magick'
+gem 'msgpack', '~> 1.4'
 gem 'puma'
 gem 'rails'
 gem 'rubocop'
@@ -15,7 +16,6 @@ gem 'sass-rails'
 gem 'turbolinks'
 gem 'tzinfo-data'
 gem 'uglifier'
-gem 'msgpack', '~> 1.4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -26,7 +26,7 @@ group :development do
   gem 'pry'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
-  gem 'rubocop-shopify', require: false
+  gem 'rubocop-shopify', '~> 2.0', require: false
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'sqlite3'

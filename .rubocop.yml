@@ -9,6 +9,7 @@ AllCops:
     - bin/*
     - db/**/*
     - vendor/bundle/**/*
+  NewCops: enable
 
 Bundler/OrderedGems:
   Enabled: true
