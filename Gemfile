@@ -26,7 +26,7 @@ group :development do
   gem "pry"
   gem "rubocop-performance"
   gem "rubocop-rails"
-  gem "rubocop-shopify", "~> 2.2", require: false
+  gem "rubocop-shopify", "~> 2.3", require: false
   gem "spring"
   gem "spring-watcher-listen"
   gem "sqlite3"
