@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.0.3"
+ruby "3.1.0"
 
 gem "bootsnap", require: false
 gem "carrierwave"
@@ -11,7 +11,7 @@ gem "jbuilder"
 gem "mini_magick"
 gem "msgpack", "~> 1.4"
 gem "puma"
-gem "rails"
+gem "rails", github: "rails/rails", branch: "7-0-stable"
 gem "rubocop"
 gem "sass-rails"
 gem "turbolinks"
@@ -35,6 +35,9 @@ end
 
 group :test do
   gem "capybara"
+  gem "net-imap"
+  gem "net-pop"
+  gem "net-smtp"
   gem "webdrivers"
 end
 
