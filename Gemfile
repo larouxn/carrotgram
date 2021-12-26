@@ -35,6 +35,9 @@ end
 
 group :test do
   gem "capybara"
+  gem "net-imap"
+  gem "net-pop"
+  gem "net-smtp"
   gem "webdrivers"
 end
 
