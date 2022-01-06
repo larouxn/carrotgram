@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 9f232376a926e447903fbbfde5c28d8985b81f86
+  revision: cc48a4841e3507764c1018deab148ed10f56947a
   branch: 7-0-stable
   specs:
     actioncable (7.0.0)
@@ -15,12 +15,18 @@ GIT
       activestorage (= 7.0.0)
       activesupport (= 7.0.0)
       mail (>= 2.7.1)
+      net-imap
+      net-pop
+      net-smtp
     actionmailer (7.0.0)
       actionpack (= 7.0.0)
       actionview (= 7.0.0)
       activejob (= 7.0.0)
       activesupport (= 7.0.0)
       mail (~> 2.5, >= 2.5.4)
+      net-imap
+      net-pop
+      net-smtp
       rails-dom-testing (~> 2.0)
     actionpack (7.0.0)
       actionview (= 7.0.0)
@@ -248,7 +254,7 @@ GEM
     sqlite3 (1.4.2)
     ssrf_filter (1.0.7)
     strscan (3.0.1)
-    thor (1.1.0)
+    thor (1.2.1)
     tilt (2.0.10)
     timeout (0.2.0)
     turbolinks (5.2.1)
