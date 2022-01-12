@@ -30,7 +30,7 @@ group :development do
   gem "pry"
   gem "rubocop-performance"
   gem "rubocop-rails"
-  gem "rubocop-shopify", "~> 2.3", require: false
+  gem "rubocop-shopify", "~> 2.4", require: false
   gem "spring"
   gem "sqlite3"
   gem "web-console"
