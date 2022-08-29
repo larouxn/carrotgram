@@ -39,9 +39,8 @@ ENV DEV_PACKAGES ${DEV_PACKAGES}
 RUN --mount=type=cache,id=dev-apt-cache,sharing=locked,target=/var/cache/apt \
     --mount=type=cache,id=dev-apt-lib,sharing=locked,target=/var/lib/apt \
     apt-get update -qq && \
-    apt-get install --no-install-recommends -y ${DEV_PACKAGES} && \
-    apt-get install -y imagemagick && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+    apt-get install --no-install-recommends -y ${DEV_PACKAGES} \
+    && rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 FROM build_deps as gems
 
@@ -65,7 +64,7 @@ RUN if [ -f "yarn.lock" ]; then \
 
 FROM base
 
-ARG PROD_PACKAGES="postgresql-client file vim curl gzip libsqlite3-0"
+ARG PROD_PACKAGES="postgresql-client file vim curl gzip libsqlite3-0 imagemagick"
 ENV PROD_PACKAGES=${PROD_PACKAGES}
 
 RUN --mount=type=cache,id=prod-apt-cache,sharing=locked,target=/var/cache/apt \
