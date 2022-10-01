@@ -293,9 +293,6 @@ DEPENDENCIES
   listen
   mini_magick
   msgpack (~> 1.5)
-  net-imap
-  net-pop
-  net-smtp
   pg
   pry
   puma
