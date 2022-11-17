@@ -1,7 +1,9 @@
 inherit_gem:
   rubocop-shopify: rubocop.yml
 
-require: rubocop-rails
+require:
+  - rubocop-performance
+  - rubocop-rails
 
 AllCops:
   TargetRubyVersion: 3.1
