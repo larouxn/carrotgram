@@ -32,6 +32,7 @@ group :development do
   gem "spring"
   gem "sqlite3"
   gem "web-console"
+  gem "ruby-lsp", require: false
 end
 
 group :test do
