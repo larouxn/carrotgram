@@ -29,10 +29,10 @@ group :development do
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "rubocop-shopify", "~> 2.10", require: false
+  gem "ruby-lsp", require: false
   gem "spring"
   gem "sqlite3"
   gem "web-console"
-  gem "ruby-lsp", require: false
 end
 
 group :test do
