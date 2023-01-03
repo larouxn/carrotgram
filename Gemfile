@@ -28,7 +28,7 @@ group :development do
   gem "pry"
   gem "rubocop-performance"
   gem "rubocop-rails"
-  gem "rubocop-shopify", "~> 2.10", require: false
+  gem "rubocop-shopify", "~> 2.11", require: false
   gem "ruby-lsp", require: false
   gem "spring"
   gem "sqlite3"
