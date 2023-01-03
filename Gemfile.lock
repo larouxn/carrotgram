@@ -216,8 +216,8 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
-    rubocop-shopify (2.10.1)
-      rubocop (~> 1.35)
+    rubocop-shopify (2.11.1)
+      rubocop (~> 1.42)
     ruby-lsp (0.3.7)
       language_server-protocol (~> 3.17.0)
       sorbet-runtime
@@ -304,7 +304,7 @@ DEPENDENCIES
   rubocop
   rubocop-performance
   rubocop-rails
-  rubocop-shopify (~> 2.10)
+  rubocop-shopify (~> 2.11)
   ruby-lsp
   sass-rails
   sassc (~> 2.1.0)
