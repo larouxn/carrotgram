@@ -220,7 +220,7 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-shopify (2.12.0)
       rubocop (~> 1.44)
-    ruby-lsp (0.4.0)
+    ruby-lsp (0.4.1)
       language_server-protocol (~> 3.17.0)
       sorbet-runtime
       syntax_tree (>= 6, < 7)
@@ -244,7 +244,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sorbet-runtime (0.5.10666)
+    sorbet-runtime (0.5.10679)
     spring (4.1.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
