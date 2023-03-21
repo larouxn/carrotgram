@@ -4,6 +4,7 @@ inherit_gem:
 require:
   - rubocop-performance
   - rubocop-rails
+  - rubocop-capybara
 
 AllCops:
   TargetRubyVersion: 3.2

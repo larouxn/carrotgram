@@ -26,6 +26,7 @@ end
 group :development do
   gem "listen"
   gem "pry"
+  gem "rubocop-capybara"
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "rubocop-shopify", "~> 2.12", require: false
