@@ -116,7 +116,6 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     json (2.6.3)
-    language_server-protocol (3.17.0.3)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -155,7 +154,6 @@ GEM
     parser (3.2.1.1)
       ast (~> 2.4.1)
     pg (1.4.6)
-    prettier_print (1.2.1)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -222,10 +220,6 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-shopify (2.12.0)
       rubocop (~> 1.44)
-    ruby-lsp (0.4.2)
-      language_server-protocol (~> 3.17.0)
-      sorbet-runtime
-      syntax_tree (>= 6.0.2, < 7)
     ruby-progressbar (1.13.0)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
@@ -246,7 +240,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sorbet-runtime (0.5.10722)
     spring (4.1.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
@@ -259,8 +252,6 @@ GEM
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.1-x86_64-linux)
     ssrf_filter (1.1.1)
-    syntax_tree (6.1.0)
-      prettier_print (>= 1.2.0)
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -314,7 +305,6 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-shopify (~> 2.12)
-  ruby-lsp
   sass-rails
   sassc (~> 2.1.0)
   spring
