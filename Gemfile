@@ -29,7 +29,7 @@ group :development do
   gem "rubocop-capybara"
   gem "rubocop-performance"
   gem "rubocop-rails"
-  gem "rubocop-shopify", "~> 2.13", require: false
+  gem "rubocop-shopify", "~> 2.14", require: false
   gem "spring"
   gem "sqlite3"
   gem "web-console"

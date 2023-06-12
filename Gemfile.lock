@@ -151,8 +151,9 @@ GEM
     nokogiri (1.15.2-x86_64-linux)
       racc (~> 1.4)
     parallel (1.23.0)
-    parser (3.2.2.1)
+    parser (3.2.2.3)
       ast (~> 2.4.1)
+      racc
     pg (1.5.3)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -218,8 +219,8 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
-    rubocop-shopify (2.13.0)
-      rubocop (~> 1.50)
+    rubocop-shopify (2.14.0)
+      rubocop (~> 1.51)
     ruby-progressbar (1.13.0)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
@@ -304,7 +305,7 @@ DEPENDENCIES
   rubocop-capybara
   rubocop-performance
   rubocop-rails
-  rubocop-shopify (~> 2.13)
+  rubocop-shopify (~> 2.14)
   sass-rails
   sassc (~> 2.1.0)
   spring
