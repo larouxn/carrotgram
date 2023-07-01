@@ -11,7 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v3.5.3
-        - uses: superfly/flyctl-actions/setup-flyctl@master
-          with:
-            version: v1.4
+        - uses: superfly/flyctl-actions/setup-flyctl@v1.4
         - run: flyctl deploy --remote-only
